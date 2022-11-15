@@ -14,8 +14,11 @@ export default function navbar() {
         
         <div className={styles.navlinks_container}>
           <div className={styles.navlinks}>EAT</div>
+          {/* <div className={styles.vertical_line} /> */}
           <div className={styles.navlinks}>TRANSPORT</div>
+          {/* <div className={styles.vertical_line} /> */}
           <div className={styles.navlinks}>STAY</div>
+          <div className={styles.navlinks}><p className={styles.login}>LOGIN</p></div>
         </div>
       </div>
     

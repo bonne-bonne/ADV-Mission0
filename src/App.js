@@ -12,12 +12,12 @@ function App() {
 
     <Navbar />
     <Header />
+    {/* <Header />
     <Header />
     <Header />
     <Header />
     <Header />
-    <Header />
-    <Header />
+    <Header /> */}
     <Main />
     <Footer />
 
