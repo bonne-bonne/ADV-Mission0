@@ -70,6 +70,7 @@
     /* justify-content: center; */
     /* position: absolute; */
     /* z-index: 999; */
+    z-index: 0;
   }
   
   .input_field{
@@ -80,6 +81,7 @@
     border: 3px solid rgba(164, 22, 26, 1);
     border: 3px solid #660708;
     border: 2px solid white;
+    color: white;
     height: 50px;
     width: 30rem;
     background-color: rgb(240, 248, 255, 0.2);
@@ -91,6 +93,7 @@
 
   .input_field:focus{
     background-color: rgb(240, 248, 255, 0.6);
+    color:  rgba(102, 7, 8, 1);
   }
 
   .input_field::placeholder{
