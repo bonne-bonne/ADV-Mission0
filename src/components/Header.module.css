@@ -1,0 +1,149 @@
+.header_outer_container{
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  border-bottom: .25rem solid #660708;
+  font-size: 5rem;
+  /* z-index: -1; */
+  
+
+  /* border: 3px solid blue; */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h1{
+  /* color: rgb(255, 254, 254,0); */
+  /* -webkit-text-stroke: 1px white; */
+  z-index: -3;
+  
+}
+
+.background_img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  z-index: -10;
+  filter: grayscale(100%);
+  top: -90rem;
+
+  
+}
+
+.background_img_tone{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  z-index: -9;
+  background-color: rgb(23, 26, 28, .6);
+  mix-blend-mode: multiply;
+}
+
+.background_img img{
+
+}
+
+.header_outer_container h1{
+  align-self: flex-start;
+  font-size: 1em;
+  width: 7em;
+}
+
+
+/*****************SEARCH BAR*****************/
+
+.search_bar_container{
+    /* align-self: centre; */
+    display: flex;
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* z-index: 999; */
+  }
+  
+  .input_field{
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    border: none;
+    border: 2px solid rgb(168, 12, 12);
+    border: 3px solid rgba(164, 22, 26, 1);
+    border: 3px solid #660708;
+    border: 2px solid white;
+    height: 50px;
+    width: 30rem;
+    background-color: rgb(240, 248, 255, 0.2);
+    padding: 5px 20px;
+    transition: all ease 2s;
+    font-size: 1rem;
+   
+  }
+
+  .input_field:focus{
+    background-color: rgb(240, 248, 255, 0.6);
+  }
+
+  .input_field::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .input_field:focus::placeholder{
+    color: black;
+    color:  rgba(102, 7, 8, 1);
+    transition: all ease 2s;
+  }
+  
+  .search_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0 50px 50px 0;
+    height: 50px;
+    width: 15rem;
+    /* z-index: 200; */
+    border: 2px solid rgb(168, 12, 12);
+    border: 3px solid rgba(164, 22, 26, );
+    border: 3px solid #660708;
+    border: 2px solid white;
+    border-left: none;
+    /* background-color: rgb(168, 12, 12); */
+    /* color: rgb(168, 12, 12); */
+    background-color: rgba(164, 22, 26, .7);
+    background-color:  rgba(102, 7, 8, .3);
+    letter-spacing: .5em;
+    transition: all 1s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .search_btn:hover {
+    background-color: rgb(224, 22, 22);
+    background-color: rgba(164, 22, 26, 1);
+    background-color:  rgb(102, 7, 8, .8);
+    letter-spacing: 1em;
+  
+    color: white;
+  }
+
+  .search_btn:active{
+    /* background-color: rgb(224, 22, 22); */
+    /* opacity: 0.6; */
+    /* scale: 1.2;
+     */
+     color: rgb(224, 22, 22);;
+  }
