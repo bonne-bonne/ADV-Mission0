@@ -27,7 +27,7 @@ export default function Header() {
           <input
             className={styles.input_field}
             type="text"
-            placeholder="Explore what Hong Kong has to offer..."
+            placeholder="Explore Hong Kong..."
           ></input>
           <div className={styles.search_btn}>SEARCH</div>
         </div>

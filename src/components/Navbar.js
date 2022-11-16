@@ -1,7 +1,15 @@
 import React from 'react'
 import styles from './Navbar.module.css'
+import { useState } from 'react'
 
-export default function navbar() {
+export default function Navbar() {
+  const [isHidden, setIsHidden] = useState(true);
+
+  const toggleMenu = () => {
+    setIsHidden(!isHidden);
+    console.log(isHidden)
+  }
+
   return (
     <div className={styles.navbar_outer_container}>
 
@@ -13,15 +21,29 @@ export default function navbar() {
         <div className={styles.logo_container}>HIDDEN HONG KONG</div>
         <div className={styles.logo_container_sm}>HHK</div>
         
+        <div className={styles.hamburger_menu} onClick={toggleMenu}>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </div>
+
         <div className={styles.navlinks_container}>
           <div className={styles.navlinks}>EAT</div>
           <div className={styles.navlinks}>TRANSPORT</div>
           <div className={styles.navlinks}>STAY</div>
           <div className={styles.navlinks}><p className={styles.login}>LOGIN</p></div>
         </div>
-        
+
       </div>
-    
+
+      <div className={`${styles.hidden_dropdown} ${isHidden && styles.hidden_menu}`}>
+      <div className={styles.navlinks_dropdown}>EAT</div>
+          <div className={styles.navlinks_dropdown}>TRANSPORT</div>
+          <div className={styles.navlinks_dropdown}>STAY</div>
+          <div className={styles.navlinks_dropdown}><p className={styles.login2}>LOGIN</p></div>
+          
+      </div>
+      <div className={`${styles.colored_section2} ${isHidden && styles.hidden_menu}`}></div>
     
     </div>
   )

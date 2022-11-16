@@ -34,7 +34,7 @@ const transportText= "It'll be a breeze getting around Hong Kong. Ride the doubl
 
 const foodText= "The cuisine in Hong Kong is to be savoured. Whether you want to eat 'street-food style' or experience fine dining, you'll find a culinary delight that is just right for you."
 
-const hotspotsText= "There's a wonder around every corner in Hong Kong, from a captivating view at the Peak or watching famous Hong Kong lights at the harbour's edge."
+const hotspotsText= "There's a wonder around every corner in Hong Kong, from a captivating view at the Peak or watching the famous Hong Kong lights at the harbour's edge."
 
   return (
     <div className={styles.main_outer_container}>

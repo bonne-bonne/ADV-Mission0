@@ -57,6 +57,7 @@
     /* this positioning is not quite working on the transition yet */
     /* also unsure of why the text is blaack */
     position: absolute; 
+    /* display: flex; */
     align-items: center;
     height: 100%;
     font-size: 1.25rem;
@@ -65,13 +66,61 @@
     letter-spacing: .1rem;
     mix-blend-mode: normal;
     color: white;
-    opacity: 0;
-    /* display: none; */
+    opacity: 0.4;
+    display: none;
     transition: ease all 5s;
     
     z-index: 23;
     /* border: 3px solid magenta; */
 }
+
+.hamburger_menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    min-width: 5rem;
+    height: 100%;
+    position: absolute;
+    right: 1rem;
+    transition: ease all .8s;
+    
+    
+    /* border: 2px solid blue; */
+
+}
+
+.hamburger_menu:hover{
+    opacity:0.5;color: rgb(224, 22, 22);
+    color: rgb(224, 22, 22);
+}
+
+.hamburger_menu:active{
+    opacity: 1;
+    background-color: #660708;
+}
+
+
+
+.bar{
+    width: 2.5rem;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+
+
+
+.bar:active{
+    opacity:1;
+    color: rgb(224, 22, 22);
+}
+
+
+
+/**************** NAVLINKS BUTTONS ******************/
 
 .navlinks_container{
     display: flex;
@@ -118,10 +167,79 @@
     padding: 8px 6px;
 }
 
+
+.hidden_dropdown{
+    display: none;
+    /* display:flex; */
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    /* background-color: aqua; */
+    z-index: 100;
+    position: absolute;
+    position: fixed;
+    top: 4.5rem;
+
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 0 0.8rem; */
+    font-size: .9em;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;
+    
+    z-index: 35;
+}
+
+.navlinks_dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    color: white;
+    width: 100%;
+    z-index: 40;
+    transition: ease all .8s;
+    
+    /* border: 1px solid blue; */
+}
+
+.navlinks_dropdown:hover{
+    background-color: #660708;
+}
+
+.navlinks_dropdown:active{
+    color: rgb(224, 22, 22);
+}
+
+.colored_section2{
+    display: none;
+    position: fixed;
+    height:20vh;
+    top:4.5rem;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(164, 22, 26, 1);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
+    transition: ease all .8s;
+    z-index: 20;
+}
+
+.hidden_menu{
+    display: none;
+    transition: ease all .8s;
+   
+}
+
+
+
 /**************** MEDIA QUERIES ******************/
 @media (max-width: 768px){
     .logo_container{
-       /* display: none; */
+       display: none;
        position: absolute;
        color: black;
        opacity: 0;
@@ -139,8 +257,27 @@
     }
    
     .navlinks_container{
-        opacity: 0;
+        display: none;
+        /* opacity: 0.5; */
         color: black;
         transition: ease all 5s;
     }
+
+    .hamburger_menu{
+        display: flex;
+    }
+
+    .hidden_dropdown{
+        display: flex;
+    }
+
+    .colored_section2{
+        display: block;
+    }
+
+    .hidden_menu{
+        display: none;
+        transition: ease all .8s;
+    }
+
    }
