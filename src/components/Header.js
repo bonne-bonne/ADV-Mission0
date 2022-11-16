@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Header.module.css";
 import hongKong from "../assets/HK.jpg";
+import hongKong2 from "../assets/HK2.jpg";
+import hongKong3 from "../assets/HK3.jpg";
+import hongKong4 from "../assets/HK4.jpg";
 import Searchbar from "./Searchbar";
 
 export default function Header() {
@@ -8,7 +11,10 @@ export default function Header() {
     <div className={styles.header_outer_container}>
      
       <div className={styles.background_img}>
-        <img src={hongKong} />
+        {/* <img src={hongKong} /> */}
+        <img src={hongKong2} />
+        {/* <img src={hongKong3} /> */}
+        {/* <img src={hongKong4} /> */}
       </div>
       <div className={styles.background_img_tone}></div>
 
