@@ -29,6 +29,10 @@
     line-height: 1.5rem;
   }
 
+  .text_column p:hover{
+    opacity: 0.8;
+  }
+
   .base_footer{
     margin-top: 5rem;
     font-size: .9rem;
