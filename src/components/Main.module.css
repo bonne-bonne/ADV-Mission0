@@ -16,24 +16,8 @@
 }
 
 .text_container h2{
-    font-family: 'Shadows Into Light', cursive; 
-    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
-
-    /* font-family: 'Bad Script', cursive; */
-    /* font-family: 'Lobster', cursive; */
-    /* font-family: 'Pacifico', cursive; */
     font-family: 'Caveat', cursive;
-    /* font-family: 'Permanent Marker', cursive; */
-    /* font-family: 'Monda', sans-serif; */
-
-
-
-    font-size: 2.25rem;
-
-   color: #660708;
-    color: rgb(255, 255, 255, 0.4);
-    color: rgb(255, 255, 255, 1);
-    color: rgba(164, 22, 26, 1);
+    font-size: 2.5rem;
     color: #161A1D;
 }
 
@@ -41,29 +25,49 @@
     width: 75ch;
     font-size: 1.2rem;
     margin-top: .5rem;
+    letter-spacing: .025rem;
 }
 
 .line{
-    background-color: rgb(22, 26, 29, 0.1);
     height: 1.5px;
     width: 85%;
     max-width: 1600px;
     margin: 4rem;
     border-radius: 50px;
+    background-color: rgb(22, 26, 29, 0.1); 
 }
 
+.card_container_outer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+    /* border: 3px solid blue; */
+}
+    
 .card_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 85%;
     max-width: 1600px;
     gap: 2rem;
-    /* margin-top: 4rem; */
+    /* border: 3px solid blue; */
 }
 
 @media (max-width: 768px){
+
+    .main_outer_container{
+        padding: 3rem 0 10rem 0;
+    }
     .card_container{
         flex-direction: column;
+    }
+
+    .text_container p{
+        width:100%;
+    }
+
+    .line{
+        margin: 2rem;
     }
 }
