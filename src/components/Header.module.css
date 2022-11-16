@@ -160,7 +160,8 @@
 
   .input_field:focus{
     background-color: rgb(240, 248, 255, 0.8);
-    color:  rgba(102, 7, 8, 1);
+    color: rgb(22, 26, 29, 1);
+    /* color:  rgba(102, 7, 8, 1); */
   }
 
   .input_field::placeholder{
@@ -175,6 +176,7 @@
   .input_field:focus::placeholder{
     color: black;
     color:  rgba(102, 7, 8, 1);
+    color: rgb(22, 26, 29, 1);
     transition: all ease 2s;
   }
   
@@ -210,6 +212,7 @@
     background-color: rgb(224, 22, 22);
     background-color: rgba(164, 22, 26, 1);
     background-color:  rgb(102, 7, 8, .8);
+    background-color: rgb(22, 26, 29, 0.7);
     letter-spacing: 1em;
   
     color: white;
@@ -221,4 +224,5 @@
     /* scale: 1.2;
      */
      color: rgb(224, 22, 22);
+     color: rgb(128, 128, 128);
   }

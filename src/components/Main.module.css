@@ -55,8 +55,15 @@
 .card_container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 85%;
     max-width: 1600px;
     gap: 2rem;
     /* margin-top: 4rem; */
+}
+
+@media (max-width: 768px){
+    .card_container{
+        flex-direction: column;
+    }
 }
