@@ -35,7 +35,15 @@
     position: fixed;
     
     z-index: 40;
-   /* border: 3px solid magenta; */  
+   /* border: 3px solid magenta;   */
+}
+
+.logo{
+    /* position: absolute; */
+    /* top: 0; */
+    height: 4.5rem;
+    padding: 10px 0;
+    margin-right: 2rem;
 }
 
 .logo_container{
@@ -254,6 +262,10 @@
        color: rgb(255, 255, 255);
        transition: ease all 5s;
        
+    }
+
+    .nav_content_container{
+        padding: 0 2rem;
     }
    
     .navlinks_container{
