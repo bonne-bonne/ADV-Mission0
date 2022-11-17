@@ -11,16 +11,15 @@
     position:relative;
 }
 
-.test{
-    width: 200px;
-    height: 200px;
-    /* background-color: yellow; */
-    /* border: 2px solid blue; */
+.animation_item{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    width: 200px;
+    height: 200px;
 
-   
+    /* background-color: yellow; */
+    /* border: 2px solid blue; */   
 }
 
 .moving{
@@ -50,7 +49,7 @@
      /* border: 2px solid blue; */
 }
 
-.skyline{
+/* .skyline{
     position: absolute;
     z-index: -1;
     width:100vw;
@@ -80,9 +79,7 @@
 .stand{
     width: 40%;
     height:40%;
-}
-
-
+} */
 
 
 
@@ -106,7 +103,7 @@
 }
 }
 
-@keyframes rotate{
+/* @keyframes rotate{
     0%{
         transform: rotate(0);
      
@@ -115,7 +112,7 @@
         transform: rotate(360deg);
       
     }
-    }
+    } */
 
 @media (max-width: 768px){
     .footer_animation_outer_container{
