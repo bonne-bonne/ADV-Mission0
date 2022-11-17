@@ -56,7 +56,6 @@ const hotspotsText= "There's a wonder around every corner in Hong Kong, from a c
         <Card text={"avocado"} heading={"HOT SPOTS"} paint={paint2} image={peak2} bodyText={hotspotsText} />
       </div>
     </div>
-
     
 
 

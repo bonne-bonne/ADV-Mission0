@@ -1,0 +1,87 @@
+.footer_animation_outer_container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 20rem;
+    /* background-color: aquamarine; */
+    margin:0;
+    padding:0;
+}
+
+.test{
+    width: 200px;
+    height: 200px;
+    /* background-color: yellow; */
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+   
+}
+
+.moving{
+    animation-delay: 1s;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: float;
+    
+    position: absolute;
+}
+
+.junk{
+    width: 70%;
+    margin-bottom: 3px;
+    /* object-fit: contain; */
+    /* border: 2px solid blue; */
+    
+}
+
+.hills{
+    width: 100vw;
+}
+
+
+
+
+
+@keyframes float{
+0%{
+  right: 0;
+  opacity: 0;
+ 
+  
+}
+20%{
+  opacity: 1;
+}
+80%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  right: 100%;
+  
+}
+}
+
+@media (max-width: 768px){
+    .footer_animation_outer_container{
+        height: 7rem;
+    }
+
+    .hills{
+        width: 200vw;
+    }
+
+    .junk{
+        width: 50%;
+    }
+
+    .moving{
+        animation-duration: 20s;
+    }
+}
