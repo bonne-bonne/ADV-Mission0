@@ -15,6 +15,9 @@ import train2 from "../assets/train2.jpg";
 import food from "../assets/dim-sum.jpeg";
 import paint2 from "../assets/streak2.png";
 import paint3 from "../assets/streak3.png";
+import paint4 from "../assets/streak2b.png";
+import paint5 from "../assets/streak2c.png";
+import paint6 from "../assets/streak2d.png";
 
 
 // THIS COPY WAS TOO LONG FOR THE CARDS
@@ -41,7 +44,7 @@ const hotspotsText= "There's a wonder around every corner in Hong Kong, from a c
     
     <div className={styles.text_container}>
       <h2>Become immersed in what Hong Kong has to offer...</h2>
-      <p>Experience Hong Kong from every angle, from stunning skyline and breathtaking landscapes, to authentic local culture and unforgettable foodie encounter. Whether you're after a portuguese egg tart, a hike or a captivating view from The Peak, you can find it here in Hong Kong.</p>
+      <p>Experience Hong Kong from every angle, from stunning skyline and breathtaking landscapes, to authentic local culture and unforgettable foodie encounter. Whether you're after a Portuguese egg tart, a hike or a captivating view from The Peak, you can find it here in Hong Kong.</p>
     </div>
 
     <div className={styles.line}></div>
@@ -49,7 +52,7 @@ const hotspotsText= "There's a wonder around every corner in Hong Kong, from a c
     <div className={styles.card_container_outer}>
       <div className={styles.card_container}>
         <Card text={"banana"} heading={"HUNGRY?"} paint={paint2}  image={food} bodyText={foodText}/>
-        <Card text={"avocado"} heading={"HOP ABOARD!"} image={train2} paint={paint3} bodyText={transportText} />
+        <Card text={"avocado"} heading={"HOP ABOARD!"} image={train2} paint={paint6} bodyText={transportText} />
         <Card text={"avocado"} heading={"HOT SPOTS"} paint={paint2} image={peak2} bodyText={hotspotsText} />
       </div>
     </div>

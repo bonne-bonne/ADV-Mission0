@@ -12,20 +12,24 @@
     max-width: 1600px;
     font-weight: 200;
     font-weight: 200;
+    
 
 }
 
 .text_container h2{
     font-family: 'Caveat', cursive;
     font-size: 2.5rem;
+    font-size: 3.2rem;
     color: #161A1D;
 }
 
 .text_container p{
     width: 75ch;
     font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: .5rem;
     letter-spacing: .025rem;
+    line-height: 2rem;
 }
 
 .line{
@@ -40,34 +44,46 @@
 .card_container_outer{
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 0 5rem;
+    justify-content:space-between;
+    width: 85%;
+    /* padding: 0 5rem; */
     /* border: 3px solid blue; */
 }
     
 .card_container{
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1600px;
-    gap: 2rem;
+    width: 100%;
+    /* max-width: 1600px; */
+    /* width: 85%; */
+    /* gap: 2rem; */
     /* border: 3px solid blue; */
 }
 
 @media (max-width: 768px){
-
-    .main_outer_container{
-        padding: 3rem 0 10rem 0;
-    }
     .card_container{
         flex-direction: column;
+        align-items: center;
+        gap: 3rem;
     }
 
     .text_container p{
+        font-size: 1.2rem;
         width:100%;
+        line-height: 1.7rem;
     }
 
     .line{
-        margin: 2rem;
+        margin: 2.5rem
+    }
+
+    .text_container h2{
+        font-size: 2.5rem;
+    }
+
+    .main_outer_container{
+        padding: 3rem 0 10rem 0;
     }
 }
