@@ -8,6 +8,7 @@
     /* background-color: aquamarine; */
     margin:0;
     padding:0;
+    position:relative;
 }
 
 .test{
@@ -35,13 +36,50 @@
 .junk{
     width: 70%;
     margin-bottom: 3px;
+    z-index: 20;
     /* object-fit: contain; */
     /* border: 2px solid blue; */
     
 }
 
 .hills{
+    position: absolute;
+    right:0;
+    z-index: -2;
     width: 100vw;
+     /* border: 2px solid blue; */
+}
+
+.skyline{
+    position: absolute;
+    z-index: -1;
+    width:100vw;
+    opacity: 0;
+    
+}
+
+.wheelset{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.wheel{
+    position: absolute;
+    width:85%;
+    top:27px;
+    right:2ps;
+    animation-delay: 1s;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotate;
+}
+
+.stand{
+    width: 40%;
+    height:40%;
 }
 
 
@@ -67,6 +105,17 @@
   
 }
 }
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+     
+    }
+    100%{
+        transform: rotate(360deg);
+      
+    }
+    }
 
 @media (max-width: 768px){
     .footer_animation_outer_container{
