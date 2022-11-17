@@ -39,14 +39,14 @@ export default function Navbar() {
 
       </div>
 
-      <div className={`${styles.hidden_dropdown} ${isHidden && styles.hidden_menu}`}>
-      <div className={styles.navlinks_dropdown}>EAT</div>
+      <div className={`${styles.menu_dropdown} ${isHidden && styles.hide_dropdown}`}>
+          <div className={styles.navlinks_dropdown}>EAT</div>
           <div className={styles.navlinks_dropdown}>TRANSPORT</div>
           <div className={styles.navlinks_dropdown}>STAY</div>
-          <div className={styles.navlinks_dropdown}><p className={styles.login2}>LOGIN</p></div>
-          
+          <div className={styles.navlinks_dropdown}><p>LOGIN</p></div>  
       </div>
-      <div className={`${styles.colored_section2} ${isHidden && styles.hidden_menu}`}></div>
+
+      <div className={`${styles.colored_section_dropdown} ${isHidden && styles.hide_dropdown}`}></div>
     
     </div>
   )

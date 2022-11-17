@@ -14,7 +14,6 @@
     height: 4.5rem;
     width: 100%;
     position: fixed;
-    /* background-color: #660708; */
     background-color: rgba(164, 22, 26, 1);
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
     mix-blend-mode: multiply;
@@ -38,14 +37,6 @@
    /* border: 3px solid magenta;   */
 }
 
-.logo{
-    /* position: absolute; */
-    /* top: 0; */
-    height: 4.5rem;
-    padding: 10px 0;
-    margin-right: 2rem;
-}
-
 .logo_container{
     display: flex;
     align-items: center;
@@ -60,10 +51,16 @@
     /* border: 3px solid magenta; */
 }
 
+.logo{
+    height: 4.5rem;
+    padding: 0.625rem 0;
+    margin-right: 2rem;
+}
+
+
+
 /********This is hidden until the media query*********** */
 .logo_container_sm{
-    /* this positioning is not quite working on the transition yet */
-    /* also unsure of why the text is blaack */
     position: absolute; 
     /* display: flex; */
     align-items: center;
@@ -176,7 +173,7 @@
 }
 
 
-.hidden_dropdown{
+.menu_dropdown{
     display: none;
     /* display:flex; */
     flex-direction: column;
@@ -221,7 +218,7 @@
     color: rgb(224, 22, 22);
 }
 
-.colored_section2{
+.colored_section_dropdown{
     display: none;
     position: fixed;
     height:20vh;
@@ -236,7 +233,7 @@
     z-index: 20;
 }
 
-.hidden_menu{
+.hide_dropdown{
     display: none;
     transition: ease all .8s;
    
@@ -279,15 +276,15 @@
         display: flex;
     }
 
-    .hidden_dropdown{
+    .menu_dropdown{
         display: flex;
     }
 
-    .colored_section2{
+    .colored_section_dropdown{
         display: block;
     }
 
-    .hidden_menu{
+    .hide_dropdown{
         display: none;
         transition: ease all .8s;
     }

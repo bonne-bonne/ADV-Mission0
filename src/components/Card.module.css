@@ -22,11 +22,9 @@
     height: 70%;
     width: 100%;
     background-image: linear-gradient(rgb(255, 255, 255, 0 ), rgba(7, 7, 7, 0.5));
-    /* background-color:#660708; */
     top: 0;
     left: 0;
     z-index: 1;
-    /* mix-blend-mode: multiply; */
 }
 
 .card_image:hover{
@@ -38,22 +36,15 @@
 .card_image{
     height: 60%;
     width: 100%;
-    /* height: 50%;
-    width: 50%; */
-    /* margin-top: 10%; */
     object-fit: cover;
     filter:grayscale(100%);
     scale: 1;
-    /* translate: 30px 0 0 0 ; */
     transform: translateY(-10);
-    /* position: absolute; */
     top: 0;
     left: 0;
-      box-shadow: rgba(50, 50, 93, 0.2) 0px 2px 5px -1px, rgba(0, 0, 0, .4) 0px 1px 3px -1px;
-      transition: ease all 2s;
-      /* border-radius: 0 0 10px 10px; */
-      /* align-self: flex-start; */
-      cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 2px 5px -1px, rgba(0, 0, 0, .4) 0px 1px 3px -1px;
+    transition: ease all 2s;
+    cursor: pointer;
       
 }
 
@@ -67,44 +58,12 @@
     width: 100%;
     height: 40%;
     padding: 1.9rem 8%;
-    /* background-color: red; */
-
-    /* background-color: rgba(164, 22, 26, 1); */
- 
-    
-    /* background-color: #660708; */
-    /* background-color: #161A1D; */
-    /* background-color: #A4161A; */
     background-color: #F5F3F4;
-    /* background-color: #D3D3D3; */
-    /* background-color: #B1A7A6; */
-      /* background-color: #161A1D; */
-
-    /* background-image: linear-gradient(rgba(29, 29, 29, 0.3), rgba(7, 7, 7, 0)); */
-
-    /* box-shadow: rgba(50, 50, 93, 0.5) 0px 2px 5px -1px, rgba(0, 0, 0, 0.6) 0px 1px 3px -1px; */
-    /* box-shadow: rgba(255, 255, 255, 0.8) -2px -2px 5px -1px, rgba(255, 255, 255, 0.) -2px -2px 3px -1px; */
-    /* box-shadow: -2px -2px 10px black; */
-
-    /* box-shadow: inset 0px 0px 10px black; */
     color: black;
-
-    /* border-top: .4rem solid white;
-    box-shadow: -2px -5px 10px rgba(0, 0, 0, 0.2); */
-
-    /* border: 5px solid #161A1D; */
     cursor: pointer;
 
 }
 
-.shadow{
-    width: 100%;
-    height: 1px; 
-    /* background-color:rgb(255, 0, 128); */
-    position: absolute;
-    top:0;
-    /* box-shadow: 3px 3px 20px black, 3px 3px 50px black, ; */
-}
 
 .card_heading_container{
     position: absolute;
@@ -112,19 +71,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.9); */
     height: 2.2rem;
     width: 100%;
-    /* padding: .25rem; */
-    /* border-radius: 50px; */
-    /* backdrop-filter: blur(2px); */
-    /* border-top: 2px solid white; */
-    /* border-bottom: 2px solid white; */
-    /* border-top: 3px solid #161A1D; */
-    /* border-bottom: 3px solid #161A1D; */
-    /* border: 3px solid #161A1D; */
-    /* border-bottom: 2px solid #161A1D; */
-    /* box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 5px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px; */
     color: #161A1D;
     color: white;
     
@@ -141,7 +89,6 @@
 
 .line{
     background-color: rgb(22, 26, 29, 1);
-    /* background-color: rgb(255, 255, 255); */
     height: 100%;
     width: 4px;
     margin-left: 4rem;
@@ -154,35 +101,14 @@
 }
 
 .card_heading{
-    
-  
     width: 100%;
     font-size: 1.5rem;
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    /* padding: 1rem 0; */
     z-index: 2;
-    /* color: white; */
     text-align: center;
-    /* text-shadow: 0 0 2px black; */
-    /* background-color:#660708; */
-    /* background-color:rgba(75, 73, 73, 0.3); */
-    /* backdrop-filter: blur(2px); */
-    /* color:#660708; */
-    /* mix-blend-mode:exclusion; */
-    /* mix-blend-mode: multiply; */
-
-
-    /* font-family: 'Shadows Into Light', cursive;  */
-    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
-
-    /* font-family: 'Bad Script', cursive; */
-    /* font-family: 'Lobster', cursive; */
-    /* font-family: 'Pacifico', cursive; */
-    /* font-family: 'Caveat', cursive; */
-    /* font-family: 'Permanent Marker', cursive; */
-    /* font-family: 'Monda', sans-serif; */
+    
 }
 
 .card_body_text{

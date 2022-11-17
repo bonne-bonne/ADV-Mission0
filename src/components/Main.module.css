@@ -48,7 +48,6 @@
     justify-content: center;
     justify-content:space-between;
     width: 85%;
-    /* padding: 0 5rem; */
     /* border: 3px solid blue; */
 }
     
@@ -58,22 +57,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    /* max-width: 1600px; */
-    /* width: 85%; */
-    /* gap: 2rem; */
     /* border: 3px solid blue; */
 }
 
 .footer_animation{
-    /* position: absolute; */
-    /* align-self: flex-end; */
-    /* bottom:0; */
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    /* align-items: flex-end; */
-    /* height: 15rem; */
-    
     border: 3px solid blue;
     width: 100%;
     margin: 0;
